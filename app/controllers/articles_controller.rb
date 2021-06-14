@@ -24,8 +24,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
-  #def update
-  #raise params.inspect
+ 
 
   def update
     @article = Article.find(params[:id])
@@ -33,3 +32,5 @@ class ArticlesController < ApplicationController
     redirect_to article_path(@article)
   end
 end
+
+# review 
